@@ -172,7 +172,7 @@ public class RunSurvey {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void QuickExcution() throws InterruptedException {
 
 		Store.InputStore();

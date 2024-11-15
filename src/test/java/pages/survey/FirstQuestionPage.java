@@ -218,11 +218,12 @@ public class FirstQuestionPage {
 	}
 
 	public void AnchorTenants(String anchTenants) {
-		
+
 		driver.findElement(InputTenants).click();
 		driver.findElement(InputTenants).sendKeys(anchTenants);
-		
+
 	}
+
 	public void NSecQues() {
 
 		driver.findElement(NextSecQues).click();

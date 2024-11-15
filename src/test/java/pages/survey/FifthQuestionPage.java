@@ -11,7 +11,6 @@ public class FifthQuestionPage {
 		this.driver = driver;
 	}
 
-	
 	By Y = By.xpath("//input[@value='Yes']");
 	By N = By.xpath("//input[@value='No']");
 	By NextSixQues = By.xpath("//button[.='Next Question']");

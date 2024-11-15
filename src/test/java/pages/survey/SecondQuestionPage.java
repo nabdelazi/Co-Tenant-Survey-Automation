@@ -22,7 +22,7 @@ public class SecondQuestionPage {
 	By SaveBn = By.xpath("//button[contains(.,'Save')]");
 	By NextThirdQues = By.xpath("//button[.='Next Question']");
 	By PreviousQues = By.xpath("//button[@class='previous-question-button']");
-                             	
+
 	public void SecondQuesText() {
 
 		String SecondQues = driver.findElement(By.xpath("//strong[@class='q-text']")).getText();
@@ -67,12 +67,11 @@ public class SecondQuestionPage {
 
 		driver.findElement(NextThirdQues).click();
 	}
-	
+
 	public void ClickPrevious() {
-		
+
 		driver.findElement(PreviousQues).click();
-		
-		
+
 	}
 
 }

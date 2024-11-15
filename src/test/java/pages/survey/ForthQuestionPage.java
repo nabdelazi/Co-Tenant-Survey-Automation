@@ -11,13 +11,12 @@ public class ForthQuestionPage {
 		this.driver = driver;
 	}
 
-	//By ForthQues = By.xpath("//strong[@class='q-text']");
+	// By ForthQues = By.xpath("//strong[@class='q-text']");
 	By AnsYes = By.xpath("//input[@value='Yes']");
 	By AnsNo = By.xpath("//input[@value='No']");
 	By DropDown = By.cssSelector(".mdi-menu-down");
 	By FifthNextQues = By.xpath("//button[.='Next Question']");
 
-	
 	public void ForthQuesText() {
 
 		String ForthQues = driver.findElement(By.xpath("//strong[@class='q-text']")).getText();

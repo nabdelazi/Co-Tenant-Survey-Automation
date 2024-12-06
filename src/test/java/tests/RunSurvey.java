@@ -45,12 +45,12 @@ public class RunSurvey {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void SlowExcution() throws InterruptedException {
 
 		Store.InputStore();
 		Thread.sleep(1000);
-		Store.StoreNum("677");
+		Store.StoreNum("602");
 		Thread.sleep(1000);
 		Store.ConfirmBtn();
 		Thread.sleep(1000);
@@ -72,6 +72,9 @@ public class RunSurvey {
 		Thread.sleep(1000);
 		FirstQuestion.AnchorTenants("Test");
 		FirstQuestion.NSecQues();
+		System.out.println("");
+		System.out.println("Second Questions");
+		System.out.println("");
 		SecondQuestion.SecondQuesText();
 		SecondQuestion.NoAnswer();
 		Thread.sleep(1000);
@@ -82,11 +85,17 @@ public class RunSurvey {
 		Thread.sleep(1000);
 		SecondQuestion.ClickSave();
 		SecondQuestion.NThirdQues();
+		System.out.println("");
+		System.out.println("Third Questions");
+		System.out.println("");
 		ThirdQuestion.ThirdQuesText();
 		ThirdQuestion.ClickYes();
 		ThirdQuestion.VacanciesNum("5");
 		ThirdQuestion.ClickNo();
 		ThirdQuestion.NForthQues();
+		System.out.println("");
+		System.out.println("Forth Questions");
+		System.out.println("");
 		ForthQuestion.ForthQuesText();
 		ForthQuestion.AnswerYes();
 		ForthQuestion.DDown();
@@ -94,11 +103,17 @@ public class RunSurvey {
 		ForthQuestion.AnswerNo();
 		ForthQuestion.NFifthQues();
 		Thread.sleep(1000);
+		System.out.println("");
+		System.out.println("Fifth Questions");
+		System.out.println("");
 		FifthQuestion.FifthQuesText();
 		FifthQuestion.YY();
 		FifthQuestion.NN();
 		FifthQuestion.NSixthQues();
 		Thread.sleep(1000);
+		System.out.println("");
+		System.out.println("Sixth Questions");
+		System.out.println("");
 		SixthQuestion.SixthQuesText();
 		SixthQuestion.Clsd();
 		Thread.sleep(1000);
@@ -160,6 +175,9 @@ public class RunSurvey {
 		SixthQuestion.JCPenneyClosedClick();
 		Thread.sleep(1000);
 		SixthQuestion.NSeventhQues();
+		System.out.println("");
+		System.out.println("Seventh Questions");
+		System.out.println("");
 		SeventhQuestion.SeventhQuesText();
 		SeventhQuestion.TypeAComment();
 		SeventhQuestion.AfterConfirmation();
@@ -172,7 +190,7 @@ public class RunSurvey {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void QuickExcution() throws InterruptedException {
 
 		Store.InputStore();

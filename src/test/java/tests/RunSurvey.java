@@ -45,7 +45,7 @@ public class RunSurvey {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void SlowExcution() throws InterruptedException {
 
 		Store.InputStore();
